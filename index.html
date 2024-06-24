@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lótus Fino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="navbar navbar-expand-lg pb-3">
+        <div class="d-flex align-items-center cardapio-container-img-desc">
+          <img src="imagens/logo.png" alt="Logo" class="logo" />
+          <h1 class="titulo ms-3">Lótus Fino</h1>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarLista"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarLista"
+        >
+          <ul class="navbar-nav text-center">
+            <li class="nav-item fw-medium">
+              <a href="#sobre" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item fw-medium">
+              <a href="#cardapio" class="nav-link">Cardápio</a>
+            </li>
+            <li class="nav-item fw-medium">
+              <a href="#contato" class="nav-link">Fale Conosco</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_1280.jpg"
+                alt="Foto de comida"
+                class="d-block w-100"
+              />
+              <div
+                class="carousel-caption d-none d-md-block carousel-background"
+              >
+                <h2 class="carousel-estilo">
+                  Descubra o verdadeiro sabor da culináriia
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/05/31/11/18/table-setting-791149_1280.jpg"
+                alt="Foto de comida"
+                class="d-block w-100"
+              />
+              <div
+                class="carousel-caption d-none d-md-block carousel-background"
+              >
+                <h2 class="carousel-estilo">
+                  Descubra o verdadeiro sabor da culináriia
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/12/15/14/05/salad-569156_1280.jpg"
+                alt="Foto de comida"
+                class="d-block w-100"
+              />
+              <div
+                class="carousel-caption d-none d-md-block carousel-background"
+              >
+                <h2 class="carousel-estilo">
+                  Descubra o verdadeiro sabor da culináriia
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container my-5">
+        <section class="row my-5 d-flex sobre-container" id="sobre">
+          <div class="col-lg-6 col-sm-12">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/03/21/48/drinks-2578446_1280.jpg"
+              alt="Foto do restaurante"
+              class="d-block w-100 rounded-4"
+            />
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <h2 class="subtitulo text-center">Sobre Nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum at convallis enim. Aenean blandit quam turpis, quis
+              facilisis lacus auctor a. Fusce luctus ipsum non mi dignissim
+              ornare. Maecenas consequat tristique risus at efficitur. Mauris
+              venenatis malesuada tortor, in porta lectus mollis in.Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Vestibulum at
+              convallis enim. Aenean blandit quam turpis, quis facilisis lacus
+              auctor a. Fusce luctus ipsum non mi dignissim ornare. Maecenas
+              consequat tristique risus at efficitur. Mauris venenatis malesuada
+              tortor, in porta lectus mollis in.
+            </p>
+          </div>
+        </section>
+        <section class="my-5" id="cardapio">
+          <div class="row">
+            <h2 class="subtitulo text-center">Cardápio</h2>
+          </div>
+          <div class="row mx-0 mt-5">
+            <nav
+              class="nav nav-pills col-12 justify-content-evenly nav-cardapio p-0"
+            >
+              <button
+                data-bs-toggle="tab"
+                data-bs-target="#entradas"
+                type="button"
+                class="nav-link nav-link-cardapio active"
+              >
+                Entradas
+              </button>
+              <button
+                data-bs-toggle="tab"
+                data-bs-target="#pratos-principais"
+                type="button"
+                class="nav-link nav-link-cardapio"
+              >
+                Pratos Principais
+              </button>
+              <button
+                data-bs-toggle="tab"
+                data-bs-target="#acompanhamentos"
+                type="button"
+                class="nav-link nav-link-cardapio"
+              >
+                Acompanhamentos
+              </button>
+              <button
+                data-bs-toggle="tab"
+                data-bs-target="#bebidas"
+                type="button"
+                class="nav-link nav-link-cardapio"
+              >
+                Bebidas
+              </button>
+            </nav>
+            <hr class="my-2" />
+          </div>
+          <div class="row">
+            <div class="tab-content">
+              <div class="tab-pane active" id="entradas">
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/open-sandwiches-with-cottage-cheese-cherry-tomatoes-basil_114579-57195.jpg?t=st=1719251857~exp=1719255457~hmac=97f5cf1a8395d112968880cd4c2678390a609d2fe6a85c5eb3488f479a6a136b&w=1380"
+                        alt="Bruschetta de Tomate e Manjericão"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Bruschetta de Tomate e Manjericão
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Fatias de pão torrado com tomate fresco, manjericão e
+                        azeite de oliva.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 19,99</p>
+                </div>
+                <div
+                  class="cardapio-item d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/smoked-meat-plate-table-with-spices-arugula-parmesan-side-view_141793-3191.jpg?t=st=1719251886~exp=1719255486~hmac=099d3bc9a83e09528be0c95fc738944f6c2a396675d27e4330489b02f118c748&w=1380"
+                        alt="Carpaccio de Carne"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Carpaccio de Carne
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Finas fatias de carne crua temperadas com limão, azeite
+                        e parmesão.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 23,99</p>
+                </div>
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/crepes-russian-blinchik-served-with-white-cheese_114579-2112.jpg?t=st=1719251917~exp=1719255517~hmac=ac826488ca261036ec5f62a8956fbe70a6e4e5cf8590d1a60dd32cb6339b96c4&w=1380"
+                        alt=" Rolinhos Primavera"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Rolinhos Primavera
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Massa fina recheada com legumes e servida com molho
+                        agridoce.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 15,99</p>
+                </div>
+              </div>
+              <div class="tab-pane" id="pratos-principais">
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/risotto-with-mushrooms-coriander-leaves_23-2147925970.jpg?t=st=1719251952~exp=1719255552~hmac=3a87b5089f883974f6cd993df084e756e1166be46ce75d0cd43f258ecf0c668b&w=1380"
+                        alt="Risoto de Cogumelos"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Risoto de Cogumelos
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Arroz cremoso com cogumelos, caldo de legumes e queijo
+                        parmesão.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 50,99</p>
+                </div>
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/grilled-salmon-with-salad_2829-19756.jpg?t=st=1719252005~exp=1719255605~hmac=14b6f7ec634b97d27f8e8bab46a9530cb12ed26fdde8068d7858614307beea74&w=900"
+                        alt="Salmão Grelhado"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Salmão Grelhado
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Filé de salmão grelhado com molho de limão e ervas.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 58,99</p>
+                </div>
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/high-angle-steak-plate-with-beer_23-2148754932.jpg?t=st=1719252036~exp=1719255636~hmac=94b7754da25eca1e448702a0eadf708abd468b0d217635438aee772462162f83&w=1380"
+                        alt=" Frango à Parmegiana"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Frango à Parmegiana
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Peito de frango empanado, coberto com molho de tomate e
+                        queijo derretido.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 60,99</p>
+                </div>
+              </div>
+              <div class="tab-pane" id="acompanhamentos">
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/still-life-potato-spanish-tortilla_23-2149715042.jpg?t=st=1719252118~exp=1719255718~hmac=8057916d6019a15e2568e21531ab9626a0f898c5c4b99e92814e5fb932d171f3&w=1380"
+                        alt="Purê de Batata Doce"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Purê de Batata Doce
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Batata-doce amassada com manteiga e temperos.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 25,99</p>
+                </div>
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/hot-spicy-stew-eggplant-sweet-pepper-olives-capers-with-basil-leaves_2829-6421.jpg?t=st=1719252157~exp=1719255757~hmac=fb9093b93fc40420eb8bec218ea5df985ae209cc8be7b323d49b440ec91a92d3&w=1060"
+                        alt="Legumes Grelhados"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Legumes Grelhados
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Abobrinha, berinjela e pimentões grelhados com azeite e
+                        ervas.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 19,99</p>
+                </div>
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/close-up-pilaf-with-beans-green-fried-onions_141793-1349.jpg?t=st=1719252196~exp=1719255796~hmac=b1db5dc0e8fb2c4ddb0264240cbbf71ffb6526277fc31f7043230d2f5538260e&w=1380"
+                        alt="Arroz Biro-Biro"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Arroz Biro-Biro
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Arroz frito com bacon, ovos, alho e salsinha.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 22,99</p>
+                </div>
+              </div>
+              <div class="tab-pane" id="bebidas">
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/delicious-beverage-with-mint-leaves_23-2148751852.jpg?t=st=1719252226~exp=1719255826~hmac=b31b222a87cc21edee92c78fbd9eeac9b56aee2f1405c95f615703bc7e0d19fe&w=1060"
+                        alt="Caipirinha"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">Caipirinha</h3>
+                      <p class="cardapio-item-descricao">
+                        Coquetel brasileiro com cachaça, limão e açúcar.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 11,99</p>
+                </div>
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/refreshing-hibiscus-ice-tea-clear-glass-container_23-2149893561.jpg?t=st=1719252251~exp=1719255851~hmac=ddc106401fa395047281ac8fb28ae6280ae99050d2e299ec5ffb9a35b6cadc3c&w=1380"
+                        alt="   Chá Gelado de Hibisco"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Chá Gelado de Hibisco
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                        Chá de hibisco gelado, refrescante e levemente
+                        adocicado.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 6,99</p>
+                </div>
+                <div
+                  class="cardapio-item my-2 d-flex justify-content-between align-items-center mb-5 pb-3"
+                >
+                  <div
+                    class="d-flex align-items-center cardapio-container-img-desc"
+                  >
+                    <div class="cardapio-item-imagem me-3">
+                      <img
+                        src="https://img.freepik.com/free-photo/glass-with-lemonade-mint_23-2148371267.jpg?t=st=1719252274~exp=1719255874~hmac=75b2aa325be73affa593c96d4983214c328884969da7f0791969b9b77866c4d9&w=1380"
+                        alt="Limonada Suíça"
+                      />
+                    </div>
+                    <div class="d-flex flex-column">
+                      <h3 class="cardapio-item-nome fw-bold m-0">
+                        Limonada Suíça
+                      </h3>
+                      <p class="cardapio-item-descricao">
+                         Limonada com leite condensado e gelo.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="linha" />
+                  <p class="preco fw-bold">R$ 6,99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer py-5" id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <form id="form">
+              <h3>Entre em contato</h3>
+              <label class="form-label" for="nome">Nome</label>
+              <input
+                required
+                class="form-control"
+                type="text"
+                id="nome"
+                placeholder="Insira seu nome"
+              />
+              <label class="form-label" for="email">E-mail</label>
+              <input
+                required
+                class="form-control"
+                type="email"
+                id="email"
+                placeholder="Insira seu e-mail"
+              />
+              <label class="form-label" for="tel">Telefone</label>
+              <input required class="form-control" type="tel" id="tel" />
+              <label class="form-label" for="mensagem">Mensagem</label>
+              <textarea
+                class="form-control"
+                type="text"
+                id="mensagem"
+                maxlength="200"
+              ></textarea>
+              <button type="submit" class="btn btn-light mt-3">Enviar</button>
+            </form>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="row">
+              <h3 class="p-0 mx-3 mt-5">Redes</h3>
+              <ul class="navbar-nav p-0 ms-3 social">
+                <li class="nav-items d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-facebook me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                    />
+                  </svg>
+                  <a href="#" class="nav-link fw-bold">Facebook</a>
+                </li>
+                <li class="nav-items d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-instagram me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                  <a href="#" class="nav-link fw-bold">Instagram</a>
+                </li>
+                <li class="nav-items d-flex align-items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-whatsapp me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                    />
+                  </svg>
+                  <a href="#" class="nav-link fw-bold">Whats-app</a>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <h3 class="mt-5">Endereço</h3>
+              <div class="d-flex align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-map me-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.5.5 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103M10 1.91l-4-.8v12.98l4 .8zm1 12.98 4-.8V1.11l-4 .8zm-6-.8V1.11l-4 .8v12.98z"
+                  />
+                </svg>
+                <p class="m-0">70716 Clara Rua</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/jquery.mask.min.js"></script>
+    <script src="./scripts/jquery.validate.min.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

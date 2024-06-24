@@ -1,0 +1,172 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --cor-fonte-1: #000000;
+  --cor-fonte-2: #ffffff;
+  --cor-fonte-3: #ab7700;
+  --cor-fundo-1: #000000b1;
+  --cor-fundo-2: #453000;
+}
+
+.titulo,
+.subtitulo,
+.carousel-estilo,
+.cardapio-item-nome,
+.preco {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--cor-fonte-3);
+}
+
+.subtitulo {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-link {
+  color: var(--cor-fonte-3);
+}
+
+.carousel-item {
+  max-height: 600px;
+}
+
+.carousel-background {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-estilo {
+  width: 100%;
+  font-size: 80px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: var(--cor-fundo-1);
+}
+
+.footer {
+  background-color: var(--cor-fundo-2);
+  color: var(--cor-fonte-2);
+}
+
+.nav-cardapio > .nav-link.active {
+  background-color: #ab7700;
+}
+
+.nav-link-cardapio {
+  width: 25%;
+}
+
+.nav-link:hover {
+  color: var(--cor-fundo-2);
+}
+
+.social .nav-link,
+.social li svg {
+  color: var(--cor-fonte-3);
+}
+.social .nav-items:hover svg,
+.social .nav-items:hover .nav-link {
+  color: var(--cor-fonte-2);
+}
+
+.cardapio-item {
+  width: 100%;
+  height: 150px;
+}
+
+.cardapio-item-imagem {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+
+.cardapio-item-imagem img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.linha {
+  width: 30%;
+  border: 1px dashed var(--cor-fonte-3);
+}
+
+.preco {
+  font-size: 32px;
+  color: var(--cor-fonte-3);
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .nav-link-cardapio {
+    width: 50%;
+  }
+  .cardapio-item {
+    height: 100%;
+    text-align: center;
+  }
+
+  .linha {
+    display: none;
+  }
+
+  .cardapio-item {
+    border-bottom: 1px dashed var(--cor-fonte-3);
+  }
+
+  .sobre-container {
+    flex-direction: column-reverse;
+  }
+
+  .carousel-estilo {
+    font-size: 52px;
+  }
+
+  .carousel-item {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-link-cardapio {
+    width: 100%;
+  }
+  .cardapio-item {
+    height: 100%;
+    text-align: center;
+  }
+  .linha {
+    display: none;
+  }
+  .cardapio-item,
+  .cardapio-container-img-desc {
+    flex-direction: column;
+  }
+
+  .cardapio-item {
+    border-bottom: 1px dashed var(--cor-fonte-3);
+  }
+
+  .sobre-container {
+    flex-direction: column-reverse;
+  }
+}
